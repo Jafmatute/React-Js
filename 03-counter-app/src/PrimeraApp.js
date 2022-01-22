@@ -1,18 +1,26 @@
 /** @format */
 import React from "react";
+import PropTypes from "prop-types";
 
 //FC => Functional components
 
-const PrimeraApp = ({ msg = null }) => {
+const PrimeraApp = ({ msg, subtitulo }) => {
   const saludo = `Bienvenido`;
 
-  console.log(msg);
   return (
     <React.Fragment>
-      <h1>Hola Mundo, {saludo}</h1>
-      <p> Mi primer hola mundo en React JS</p>
+      <h1>Hola Mundo, {msg}</h1>
+      <p> {subtitulo}</p>
     </React.Fragment>
   );
+};
+
+PrimeraApp.propTypes = {
+  msg: PropTypes.string.isRequired,
+};
+
+PrimeraApp.defaultProps = {
+  subtitulo: "React Js default props",
 };
 
 export default PrimeraApp;
