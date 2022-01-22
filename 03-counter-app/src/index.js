@@ -11,4 +11,4 @@ import PrimeraApp from "./PrimeraApp";
 //Referencia
 const divRoot = document.querySelector("#root");
 
-ReactDOM.render(<PrimeraApp />, divRoot);
+ReactDOM.render(<PrimeraApp msg="Bienvenido" />, divRoot);
