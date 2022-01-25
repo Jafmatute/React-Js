@@ -2,10 +2,15 @@
  * Mi primer test
  *  @format */
 
-test("debe ser true", () => {
-  const isActive = true;
+describe("Pruebas en el archivo demo.test.js", () => {
+  test("deben ser iguales los string", () => {
+    // 1. Inicialización
+    const mensaje = "Hola Mundo";
 
-  //   if (isActive) {
-  //     throw new Error("No esta activo");
-  //     }
+    // Estímulo
+    const mensaje2 = "Hola Mundo";
+
+    // Observar el comportamiento
+    expect(mensaje).toBe(mensaje2);
+  });
 });
