@@ -9,7 +9,7 @@ const PrimeraApp = ({ msg, subtitulo }) => {
 
   return (
     <React.Fragment>
-      <h1>Hola Mundo, {msg}</h1>
+      <h1>{msg}</h1>
       <p> {subtitulo}</p>
     </React.Fragment>
   );
