@@ -12,6 +12,6 @@ import PrimeraApp from "./PrimeraApp";
 //Referencia
 const divRoot = document.querySelector("#root");
 
-ReactDOM.render(<PrimeraApp msg="Hola, soy Goku" />, divRoot);
+//ReactDOM.render(<PrimeraApp msg="Hola, soy Goku" />, divRoot);
 
-//ReactDOM.render(<CounterApp value={10} />, divRoot);
+ReactDOM.render(<CounterApp value={10} />, divRoot);
