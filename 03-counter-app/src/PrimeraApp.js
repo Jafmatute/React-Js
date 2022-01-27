@@ -10,7 +10,7 @@ const PrimeraApp = ({ msg, subtitulo }) => {
   return (
     <React.Fragment>
       <h1>{msg}</h1>
-      <p> {subtitulo}</p>
+      <p>{subtitulo}</p>
     </React.Fragment>
   );
 };
@@ -20,7 +20,7 @@ PrimeraApp.propTypes = {
 };
 
 PrimeraApp.defaultProps = {
-  subtitulo: "React Js default props",
+  subtitulo: "Subtitulo",
 };
 
 export default PrimeraApp;

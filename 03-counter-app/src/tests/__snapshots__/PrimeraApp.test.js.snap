@@ -6,8 +6,7 @@ exports[`Pruebas en el componente <PrimeraApp /> debe de mostrar <PrimeraApp /> 
     Hola, soy Goku
   </h1>
   <p>
-     
-    React Js default props
+    Subtitulo
   </p>
 </Fragment>
 `;
