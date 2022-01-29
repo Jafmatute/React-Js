@@ -10,12 +10,13 @@ const GifExpertApp = () => {
 
   const handleAdd = () => {
     // setCategorias([...categorias, "one push"]);
-    setCategorias((cats) => [...categorias, "one puch"]);
+    setCategorias((cats) => [...cats, "one puch"]);
   };
+
   return (
     <>
       <h2>GifExpertApp</h2>
-      <AddCategory />
+      <AddCategory setCategorias={setCategorias} />
       <hr />
 
       <ol>
