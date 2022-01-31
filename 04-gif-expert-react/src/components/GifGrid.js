@@ -1,8 +1,11 @@
 /** @format */
 
-import React from "react";
+import React, { useState, useEffect } from "react";
+import GifGridItem from "./GifGridItem";
 
 export const GifGrid = ({ categoria }) => {
+  const [images, setImages] = useState([]);
+
   const getGif = async () => {
     const url = `https://api.giphy.com/v1/gifs/search?q=kimetsu&limit=10&api_key=YAdYJxPGMmsk51wppqHMVWOuGMjlxYLz`;
     const rsp = await fetch(url);
@@ -16,13 +19,20 @@ export const GifGrid = ({ categoria }) => {
       };
     });
 
-    console.log(gits);
+    setImages(gits);
   };
 
-  getGif();
+  useEffect(() => {
+    getGif();
+  }, []);
+
   return (
     <>
-      <h4>{categoria} </h4>
+      <ol>
+        {images.map((img) => (
+          <GifGridItem key={img.id} {...img} />
+        ))}
+      </ol>
     </>
   );
 };
