@@ -9,8 +9,8 @@ export const GifGrid = ({ categoria }) => {
 
   return (
     <>
-      <h3> {categoria} </h3>
-      {loading && <p>Loading</p>}
+      <h3 className="animate__animated animate__zoomIn"> {categoria} </h3>
+      {loading && <p className="animate__animated animate__flash">Loading</p>}
       <div className="card-grid">
         <ol>
           {images.map((img) => (
