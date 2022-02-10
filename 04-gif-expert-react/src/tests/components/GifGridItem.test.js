@@ -7,7 +7,7 @@ describe('Pruebas al componente <GifGridItem />', () => {
     const title = 'Buscando empleo';
     const url = 'https://google.com';
 
-    const wrapper = shallow(<GifGridItem />);
+    const wrapper = shallow(<GifGridItem title={title} url={url} />);
 
     expect(wrapper).toMatchSnapshot();
   });
