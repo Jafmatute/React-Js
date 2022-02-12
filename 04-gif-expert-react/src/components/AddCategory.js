@@ -1,10 +1,10 @@
 /** @format */
 
-import React, { useState } from "react";
-import PropTypes from "prop-types";
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 const AddCategory = ({ setCategorias }) => {
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState('');
 
   const handleInputChanged = (event) => {
     setInputValue(event.target.value);
@@ -14,12 +14,12 @@ const AddCategory = ({ setCategorias }) => {
     event.preventDefault();
     if (inputValue.trim().length > 2) {
       setCategorias((cats) => [inputValue, ...cats]);
-      setInputValue("");
+      setInputValue('');
     }
   };
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" value={inputValue} onChange={handleInputChanged} />
+      <input type='text' value={inputValue} onChange={handleInputChanged} />
     </form>
   );
 };
