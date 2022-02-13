@@ -1,17 +1,17 @@
 /** @format */
 
-import { useState } from "react";
-import AddCategory from "./components/AddCategory";
-import GifGrid from "./components/GifGrid";
+import { useState } from 'react';
+import AddCategory from './components/AddCategory';
+import GifGrid from './components/GifGrid';
 
-const GifExpertApp = () => {
-  const categoriasList = ["One Punch"];
+const GifExpertApp = ({ defaultCategorias = [] }) => {
+  // const categoriasList = ["One Punch"];
 
-  const [categorias, setCategorias] = useState(categoriasList);
+  const [categorias, setCategorias] = useState(defaultCategorias);
 
   const handleAdd = () => {
     // setCategorias([...categorias, "one push"]);
-    setCategorias((cats) => [...cats, "one puch"]);
+    setCategorias((cats) => [...cats, 'one puch']);
   };
 
   return (
