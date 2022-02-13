@@ -19,10 +19,17 @@ describe('Pruebas en el componente <GifGrid />', () => {
         url: 'https:/google.com',
         title: 'test',
       },
+      {
+        id: 'abcdd',
+        url: 'https:/facebook.com',
+        title: 'test',
+      },
     ];
     useFetchGifs.mockReturnValue({ data: gifs, loading: false });
     const wrapper = shallow(<GifGrid categoria={categoria} />);
 
-    expect(wrapper).toMatchSnapshot();
+    // expect(wrapper).toMatchSnapshot();
+    expect(wrapper.find('p').exists()).toBe(false);
+    expect(wrapper.find('GifGridItem').length).toBe(gifs.length);
   });
 });

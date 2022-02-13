@@ -1,27 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pruebas en el componente <GifGrid /> Debe de mostrar items cuando se cargan imagénes useFetchGifs 1`] = `
-<Fragment>
-  <h3
-    className="animate__animated animate__zoomIn"
-  >
-     
-    one Punch
-     
-  </h3>
-  <div
-    className="card-grid"
-  >
-    <GifGridItem
-      id="abc"
-      key="abc"
-      title="test"
-      url="https:/google.com"
-    />
-  </div>
-</Fragment>
-`;
-
 exports[`Pruebas en el componente <GifGrid /> Probar que renderice el componente correctamente 1`] = `
 <Fragment>
   <h3
