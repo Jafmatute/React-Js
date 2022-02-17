@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './counter.css';
 
-export const CounterApp = () => {
+const CounterApp = () => {
   const [state, setState] = useState({
     counter: 10,
     counter2: 20,
