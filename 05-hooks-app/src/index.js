@@ -11,6 +11,7 @@ import LayaoutEffect from './componets/05-useLayoutEffect/LayaoutEffect';
 import CallbackHook from './componets/06-useMemo/CallbackHook';
 import MemoHook from './componets/06-useMemo/MemoHook';
 import Memorize from './componets/06-useMemo/Memorize';
+import { Padre } from './componets/07-tarea-memo/Padre';
 import HookApp from './HookApp';
 
-ReactDOM.render(<CallbackHook />, document.getElementById('root'));
+ReactDOM.render(<Padre />, document.getElementById('root'));
