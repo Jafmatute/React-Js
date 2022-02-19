@@ -8,8 +8,9 @@ import MultipleCustomHooks from './componets/03-examples/MultipleCustomHooks';
 import FocusScreen from './componets/04-useRef/FocusScreen';
 import RealExampleRef from './componets/04-useRef/RealExampleRef';
 import LayaoutEffect from './componets/05-useLayoutEffect/LayaoutEffect';
+import CallbackHook from './componets/06-useMemo/CallbackHook';
 import MemoHook from './componets/06-useMemo/MemoHook';
 import Memorize from './componets/06-useMemo/Memorize';
 import HookApp from './HookApp';
 
-ReactDOM.render(<MemoHook />, document.getElementById('root'));
+ReactDOM.render(<CallbackHook />, document.getElementById('root'));
